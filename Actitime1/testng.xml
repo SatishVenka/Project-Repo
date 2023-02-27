@@ -1,0 +1,18 @@
+
+<suite name="Suite" parallel ="tests">
+  <test thread-count="5" name="TestBlock1">
+  <parameter name ="browser" value ="chrome"/>
+    <classes>
+      <class name="com.actitime.testscript.CreateCustermer"/>
+      <class name="com.actitime.testscript.Task"/>
+    </classes>
+  </test> 
+  <test thread-count="5" name="TestBlock2">
+  <parameter name ="browser" value ="firefox"/>
+    <classes>
+      <class name="com.actitime.testscript.ProjectModule"/>
+      <class name="com.actitime.testscript.CreateCustermerModule"/>
+      <class name="com.actitime.testscript.TaskModule"/>
+    </classes>
+  </test> 
+</suite> 
